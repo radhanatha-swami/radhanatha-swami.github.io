@@ -11,8 +11,9 @@
       let str = window.location.toString();
       let pos = str.indexOf('?');
       if(pos>0)
-        str = str.substr(pos+1)
-      window.location = 'https://shravanotsava.github.io/?app=rns&' + str
+        str = '&' + str.substr(pos+1)
+      else str = ''
+      window.location = 'https://shravanotsava.github.io/?app=rns' + str
     </script>
   </body>
 </html>
