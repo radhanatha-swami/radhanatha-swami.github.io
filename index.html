@@ -8,7 +8,11 @@
   </head>
   <body>
     <script>
-      window.location = 'https://shravanotsava.github.io/?app=rns'
+      let str = window.location.toString();
+      let pos = str.indexOf('?');
+      if(pos>0)
+        str = str.substr(pos+1)
+      window.location = 'https://shravanotsava.github.io/?app=rns&' + str
     </script>
   </body>
 </html>
